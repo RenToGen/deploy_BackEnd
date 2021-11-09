@@ -13,6 +13,8 @@ public class UsuarioLogin {
 	private String senha;
 	
 	private String token;
+	
+	private String foto;
 
 	public long getId() {
 		return id;
@@ -61,4 +63,13 @@ public class UsuarioLogin {
 	public void setTipoCadastro(String tipoCadastro) {
 		this.tipoCadastro = tipoCadastro;
 	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+	
 }

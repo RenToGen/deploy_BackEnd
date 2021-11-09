@@ -40,6 +40,8 @@ public class Usuario {
 	@NotNull(message = "O valor não pode Ser nulo")
 	@Size(min = 8, message = "A senha tem que conter no minimo 8 caracteres ")
 	private String senha;
+	
+	private String foto;
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
@@ -92,5 +94,14 @@ public class Usuario {
 	public void setProduto(List<Produto> produto) {
 		this.produto = produto;
 	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+	
 
 }
