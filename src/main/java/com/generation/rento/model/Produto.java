@@ -26,6 +26,8 @@ public class Produto {
 	@NotNull (message = "O valor não pode Ser nulo")
 	@Size(min = 50, max = 1000, message = "O texto tem que conter de 50 a 1000 caracteres")
 	private String apresentacao;
+	
+	private String imagem;
 
 	@ManyToOne
 	@JsonIgnoreProperties("produto")
@@ -73,6 +75,14 @@ public class Produto {
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
+	}
+
+	public String getImagem() {
+		return imagem;
+	}
+
+	public void setImagem(String imagem) {
+		this.imagem = imagem;
 	}
 
 }
