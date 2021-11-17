@@ -10,9 +10,10 @@ import com.generation.rento.model.Usuario;
 @Repository
 public interface UsuarioRepository extends JpaRepository<Usuario, Long>{
 	
-	public Optional<Usuario> findByUsuario(String usuario);
 	
 	public List <Usuario> findAllByNomeContainingIgnoreCase (String nome);
+	public Optional<Usuario> findByUsuarioAndSenha(String usuario, String senha);
+	public Optional<Usuario> findByUsuario(String usuario);
 	
 	public Usuario findByNome(String nome);
 }
