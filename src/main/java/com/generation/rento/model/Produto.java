@@ -24,7 +24,7 @@ public class Produto {
 	private String nomeServico;
 
 	@NotNull (message = "O valor não pode Ser nulo")
-	@Size(min = 50, max = 1000, message = "O texto tem que conter de 50 a 1000 caracteres")
+	@Size(min = 15, max = 1000, message = "O texto tem que conter de 15 a 1000 caracteres")
 	private String apresentacao;
 	
 	private String imagem;

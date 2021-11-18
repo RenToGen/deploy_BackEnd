@@ -42,6 +42,16 @@ public class Usuario {
 	private String senha;
 	
 	private String foto;
+	
+	private String telefone;
+
+	public String getTelefone() {
+		return telefone;
+	}
+
+	public void setTelefone(String telefone) {
+		this.telefone = telefone;
+	}
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
