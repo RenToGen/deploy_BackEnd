@@ -9,7 +9,7 @@
         </p>
     
 ## :memo: Descrição
-Neste repostitório está alocado o deploy do Back End do E-commerce **RenTo**. 
+Neste repostitório está alocado o deploy do Back-End do E-commerce **RenTo**. 
   
 <hr size="3">
 <br>
